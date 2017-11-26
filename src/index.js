@@ -8,7 +8,7 @@ import SearchBar from './components/search_bar';
 import VideoDetail from './components/video_detail';
 
 const API_KEY = 'AIzaSyAwg7pjsLVrgON6_9Pq3stwCM86xDAlZIQ';
-const DEFAULT_SEARCH = 'surfboards'
+const DEFAULT_SEARCH = 'react js'
 
 class App extends Component {
 
@@ -35,7 +35,7 @@ class App extends Component {
     render() {
         const videoSearch = _.debounce((term) => {
             this.videoSearch(term)
-        }, 300);
+        }, 500);
 
         return (
             <div>
